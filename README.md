@@ -4,15 +4,18 @@
 [![rank](https://make.fun/badge/news-image-20261124/hanafixampret/makefun-news-image-20261124/rank.svg)](https://make.fun/bounty/news-image-20261124/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124)
 [![reward](https://make.fun/badge/news-image-20261124/hanafixampret/makefun-news-image-20261124/reward.svg)](https://make.fun/bounty/news-image-20261124?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124)
 
-One image that sums up the world's news of Tuesday 24 November 2026:
-Nvidia reinstates Jensen Huang as CEO, COP31 ends in Antalya with no
-deal, a factory fire kills 24 in Indonesia, the ICJ rules Myanmar
-committed genocide against the Rohingya, Gukesh begins his world chess
-title defence in Geneva, and Russian strikes kill 14 in the Kyiv
-region. Drawn as a one-page newspaper front page by `draw_news.py`
-(Python + Pillow, no network); `main.ts` copies the finished `entry.png`
-to the output directory, byte for byte, so two runs write identical
-output.
+A single image summing up the world news of Tuesday 24 November 2026,
+drawn as a one-page newspaper front page: Jensen Huang returns as
+Nvidia's chief executive and shares jump; the COP31 climate talks end
+with no deal; a factory fire kills 24 in Indonesia; NATO sends
+early-warning aircraft to Poland; fourteen are dead across the Kyiv
+region and the war spills as far as Libya; and Gukesh opens his world
+chess title defence in Geneva.
+
+`draw_news.py` renders the page (Python + Pillow, no network, fully
+deterministic) to `entry.png`. `main.ts` validates that image — whole
+PNG, 1024×1024, under 1 MiB — and writes a copy to the output
+directory, so both graded runs produce the same bytes.
 
 ## Run it
 
